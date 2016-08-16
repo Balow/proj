@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="main">
+
+<head>
+    <!-- <meta charset="UTF-8">
+    <title>Contact List</title> -->
+    <ui-meta></ui-meta>
+</head>
+<style>
+
+body.fade {
+    opacity: 1;
+    transition: opacity 1s ease;
+}
+body.fade.ng-cloak {
+    opacity: 0;
+}
+
+</style>
+
+<body class="ng-cloak fade container">
+    <ui-header></ui-header>
+    
+    <main>
+        <ng-view></ng-view>
+    </main>
+
+    <ui-footer></ui-footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-route.min.js"></script>
+    <script src="modules/ui/ui.js"></script>
+    <script src="modules/main/main.js"></script>
+    <script src="modules/core/core.js"></script>
+    <script src="modules/core/core.user.js"></script>
+    <script src="modules/core/core.item.js"></script>
+    <script src="modules/contact-login/contact-login.js"></script>
+    <script src="modules/template/template-theme-box.js"></script>
+    <script src="modules/template/template-indicator.js"></script>
+</body>
+
+</html>
